@@ -19,3 +19,14 @@
 //           }
 //           return i;
 // }
+
+// Third Description: At first we have to take a number form user than subfracted the number by seven.if the result is greater than seven than return the result else return the input number multiplied by throw. 
+// function isLGSeven(number){
+//           let minusValue = number - 7;
+//           if(minusValue<7){
+//                     return minusValue;
+//           }
+//           else{
+//                     return number*2;
+//           }
+// }
