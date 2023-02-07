@@ -30,3 +30,36 @@
 //                     return number*2;
 //           }
 // }
+
+
+// Fourth Description:In this problem  i have to find the numbers less than zero from the array.once i found it i need to return the numbers of bad data which is less than zero.
+// function findingBadData(array){
+//           let count = 0;
+//           for(let i =0;i<array.length;i++){
+//                     const element = array[i];
+//                     if(element<0)count++;
+//           }
+//           return count;
+// }
+
+
+
+
+
+
+// Fifth Description:In this problem find the total diamond from my friend multiplied by gems.if the total diamond is greater than two thousand subtrac the diamond from total diamond if it is less than two thousand prind the total diamond. 
+
+// function gemsToDiamond(firstFriendGems,secondFriendGems,thirdFriendGems){
+//           let firstGemsPower = firstFriendGems*21;
+//           let secondGemsPower = secondFriendGems*32;
+//           let thirdGemsPower = thirdFriendGems*43;
+//           let totalDiamond = firstGemsPower + secondGemsPower + thirdGemsPower;
+//           let finalDiamond ='';
+//           if(totalDiamond > (1000*2)){
+//                     finalDiamond = totalDiamond - 2000;
+//           }
+//           else{
+//                     console.log(totalDiamond);
+//           }
+//           console.log(finalDiamond);
+// }
