@@ -1,17 +1,21 @@
-function gemsToDiamond(firstFriendGems,secondFriendGems,thirdFriendGems){
-          let firstGemsPower = firstFriendGems*21;
-          let secondGemsPower = secondFriendGems*32;
-          let thirdGemsPower = thirdFriendGems*43;
-          let totalDiamond = firstGemsPower + secondGemsPower + thirdGemsPower;
-          let finalDiamond ='';
-          if(totalDiamond > (1000*2)){
-                    finalDiamond = totalDiamond - 2000;
+// let numbers = [ 4, -9, -5, -33, -55 ];
+// let count = 0;
+// for(let i = 0;i<numbers.length; i++){
+//           const element = numbers[i];
+//           if(element<0){
+//                     count = count +1;
+//           }
+//           console.log(count);
+// }
+
+function findingBadData(array){
+          let count = 0;
+          for(let i =0;i<array.length;i++){
+                    const element = array[i];
+                    if(element<0)count++;
           }
-          else{
-                    console.log(totalDiamond);
-          }
-          console.log(finalDiamond);
+          return count;
 }
 
-gemsToDiamond(100,5,1);
-// console.log(what);
+let result = findingBadData([ 2, -5, -7, -13 ]);
+console.log(result);
