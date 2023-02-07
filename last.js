@@ -1,13 +1,16 @@
-
-function findingBadData(array){
-          let count = 0;
-          for(let i =0;i<array.length;i++){
-                    const element = array[i];
-                    if(element<0)count++;
+function gemsToDiamond(firstFriendGems,secondFriendGems,thirdFriendGems){
+          let firstGemsPower = firstFriendGems*21;
+          let secondGemsPower = secondFriendGems*32;
+          let thirdGemsPower = thirdFriendGems*43;
+          let totalDiamond = firstGemsPower + secondGemsPower + thirdGemsPower;
+          let finalDiamond ='';
+          if(totalDiamond > (1000*2)){
+                    finalDiamond = totalDiamond - 2000;
           }
-          return count;
+          else{
+                    console.log(totalDiamond);
+          }
+          console.log(finalDiamond);
 }
 
-let fina = findingBadData([ -4, -9, -5, -33, -55 ]);
-console.log(fina);
-
+gemsToDiamond(1,1,1);
